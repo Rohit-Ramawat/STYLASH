@@ -1,0 +1,35 @@
+#nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid black;
+    padding: 10px;
+}
+#nav>.logo{
+    height: 40px;
+}
+#nav>.links{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin:13px 0px 2px 0px;
+}
+.links>a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    font-weight:500;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+#nav>.icons{
+    width: 13%;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 1px;
+}
+#nav>.icons>img{
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    
+}
