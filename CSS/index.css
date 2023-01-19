@@ -1,35 +1,154 @@
-#nav{
+body{
+    background-color: #EEEEEE;
+    
+}
+nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid black;
     padding: 10px;
 }
-#nav>.logo{
-    height: 40px;
+nav:hover{
+    background-color: white;
 }
-#nav>.links{
+nav>.logo{
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav>.links{
     width: 60%;
     display: flex;
     justify-content: space-between;
     margin:13px 0px 2px 0px;
 }
-.links>a{
+.links>.menu>a{
     text-decoration: none;
     color: black;
     font-size: large;
     font-weight:500;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
-#nav>.icons{
+
+.menu .submenu{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    display:grid;
+    position: absolute;
+    top:52px;
+    left:260px;
+}
+.menu .submenu a{
+    line-height: 40px;
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    font-weight:500;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+nav>.icons{
     width: 13%;
     display: flex;
     justify-content: space-around;
     margin-right: 1px;
 }
-#nav>.icons>img{
-    width: 35px;
-    height: 35px;
+.icons>i{
+  font-size:x-large;
+}
+#top{
+    width: 100%;
+}
+#top>#video{
+    width: 100%;
+}
+#middle1{
+    display: flex;
+    justify-content: space-around;
+}
+#middle1>div{
+  width: 32.8%;
+  text-align: center;
+  border-radius: 5px;
+  background-color: white;
+  padding-bottom: 10px;
+}
+#middle1>div:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#middle1>div>img{
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+}
+#middle1>div>a{
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#middle1>div>a:hover{
+    font-size: x-large;
+    color: rgb(69, 71, 241);
+}
+#middle2{
+    width: 100%;
     background-color: white;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    line-height: 10px;
+    height: 300px;
+    padding: 30px 0px 30px 0px;
+}
+#middle2>a{
+    font-size: xx-large;
+    text-decoration: none;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#middle2>a:hover{
+    color: rgb(69, 71, 241);
+}
+#middle3{
+    background-image: url('https://assets.burberry.com/is/image/Burberryltd/5886B821-36C2-4C35-8C2A-95BA92E16E90?$BBY_V2_SL_HERO$&wid=1300&hei=867');
+    background-attachment:fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    padding: 10px 0px 0px 20px;
+}
+#middle3:hover{
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+#middle3>p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#middle3>h1{
+    margin-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#middle3>a{
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#middle3>a:hover{
+    color: rgb(69, 71, 241);
+}
+#bottom{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+#bottom>div{
+    width: 23%;
+    padding: 10px 0px 10px 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#bottom>.signup~div>h4:hover{
+    color: rgb(69, 71, 241);
 }
