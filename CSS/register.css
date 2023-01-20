@@ -1,13 +1,10 @@
-body{
-    background-color: #EEEEEE;
-    
-}
 /* nav bar CSS here */
 nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 5px;
+    background-color: #f7f7f7;
 }
 nav:hover{
     background-color: white;
@@ -92,93 +89,89 @@ nav>.icons>div>i:hover{
     cursor: pointer;
 }
 
-/* top part CSS here */
-#top{
+/* top image part */
+.image{
+    background-image: url('https://assets.burberry.com/is/image/Burberryltd/MyAccount.jpg?$BBY_V2_BASIC$&wid=1349&hei=270');
     width: 100%;
+    height: 250px;
+    text-align: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+    padding-top: 20px;
 }
-#top>#video{
-    width: 100%;
+.image>h1{
+    padding-top:65px;
 }
 
-
-/* middle part CSS here */
-#middle1{
+/* signin and register divs */
+#cont{
+    margin-top: 40px;
     display: flex;
-    justify-content: space-around;
-}
-#middle1>div{
-  width: 32.8%;
-  text-align: center;
-  border-radius: 5px;
-  background-color: white;
-  padding-bottom: 10px;
-}
-#middle1>div:hover{
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
-#middle1>div>img{
-    width: 100%;
-    border-radius: 5px 5px 0px 0px;
-}
-#middle1>div>a{
-    text-decoration: none;
-    color: black;
-    font-size: x-large;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-#middle1>div>a:hover{
-    font-size: x-large;
-    color: rgb(69, 71, 241);
-}
-#middle2{
-    width: 100%;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    line-height: 10px;
-    height: 300px;
-    padding: 30px 0px 30px 0px;
-}
-#middle2>a{
-    font-size: xx-large;
-    text-decoration: none;
-    color: black;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-#middle2>a:hover{
-    color: rgb(69, 71, 241);
-}
-#middle3{
-    background-image: url('https://assets.burberry.com/is/image/Burberryltd/5886B821-36C2-4C35-8C2A-95BA92E16E90?$BBY_V2_SL_HERO$&wid=1300&hei=867');
-    background-attachment:fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 500px;
-    padding: 10px 0px 0px 20px;
-}
-#middle3:hover{
-    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-}
-#middle3>p{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-#middle3>h1{
-    margin-bottom: 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-#middle3>a{
-    text-decoration: none;
-    color: black;
-    font-size: x-large;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-#middle3>a:hover{
-    color: rgb(69, 71, 241);
-}
+    justify-content:space-around;
 
-
+}
+#cont>#signin{
+    background-color: #f7f7f7;
+    width: 45%;
+    height: fit-content;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px 10px 30px 40px;
+}
+#cont>#register{
+    background-color: #f7f7f7;
+    width: 45%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px 10px 20px 40px;
+}
+#signin>h3{
+    letter-spacing: 1.5px;
+}
+#register>h3{
+    letter-spacing: 1.5px;
+}
+#cont>#signin input{
+    width: 92%;
+    padding: 13px;
+}
+#cont>#register input{
+    width: 92%;
+    padding: 13px;
+}
+#country{
+    width: 97%;
+    padding: 13px;
+}
+#title{
+    width: 97%;
+    padding: 13px;
+}
+#cont>#signin #signinBtn{
+    width:20%;
+    display: block;
+    margin: auto;
+    font-size: medium;
+    border-radius: 2px;
+}
+#cont>#register #registerBtn{
+    width:20%;
+    display: block;
+    margin: auto;
+    font-size:medium;
+    border-radius: 2px;
+}
+#cont>#signin #signinBtn:hover{
+    background-color: rgb(28, 28, 29);
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#cont>#register #registerBtn:hover{
+    background-color: rgb(28, 28, 29);
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
 /* Bottom CSS here */
 #bottom{
     margin-top: 20px;
@@ -186,10 +179,11 @@ nav>.icons>div>i:hover{
     justify-content: space-around;
 }
 #bottom>div{
-    width: 23%;
+    width: 33%;
     padding: 10px 0px 10px 15px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
 }
-#bottom>.signup~div>h4:hover{
+#bottom>div h4:hover{
     color: rgb(69, 71, 241);
 }
