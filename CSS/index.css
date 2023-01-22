@@ -81,7 +81,6 @@ nav>.icons{
     
 }
 nav>.icons>div{
-    
     width: 30px;
     height: 30px;
 }
@@ -192,4 +191,16 @@ nav>.icons>div>i:hover{
 }
 #bottom>.signup~div>h4:hover{
     color: rgb(69, 71, 241);
+}
+#bottom>.signup .Sign{
+   padding: 5px;
+   margin-left: 10px;
+   font-size: small;
+   background-color:gray;
+   border: 0px;
+}
+#bottom>.signup .Sign:hover{
+    background-color: rgb(28, 28, 29);
+    color: rgb(131, 129, 238);
+    transition: 1s;
 }

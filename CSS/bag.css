@@ -1,0 +1,164 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    background-color: #f7f7f7;
+}
+nav:hover{
+    background-color: white;
+}
+nav>.logo{
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav>.logo:hover{
+    cursor: pointer;
+}
+nav>.links{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin:13px 0px 2px 0px;
+    padding: 20px;
+}
+.links>.menu{
+    display: inline-block;
+    position: relative;
+}
+.links>.menu>a{
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    font-weight:500;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+.links>.menu:hover .menu_links{
+   background-color: rgb(28, 28, 29);
+   color: white;
+   transition: 1s;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: rgb(28, 28, 29);
+    z-index: 1;
+    border-radius:0px 5px 5px 5px;
+    padding:0px 5px 5px 5px;
+  }
+.submenu a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    line-height: 30px;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 2px 0px 2px 5px;
+    text-align:justify;
+}
+.menu:hover .submenu {display: block;}
+.submenu a:hover{ 
+    background-color: rgb(28, 28, 29);
+    color: rgb(131, 129, 238);
+    transition: 1s;
+}
+nav>.icons{
+    width: 13%;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 1px;
+    
+}
+nav>.icons>div{
+    width: 30px;
+    height: 30px;
+}
+.icons>div>i{
+  font-size:x-large;
+}
+nav>.icons>div>i:hover{
+    cursor: pointer;
+}
+
+/* top part */
+#top{
+    margin-top: 10px;
+    width: 100%;
+    height: 150px;
+}
+#top>h1{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 100px;
+}
+
+
+/* Container and Card CSS here */
+#container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 10px;
+}
+#container>div{
+    padding-bottom: 10px;
+    border-radius: 5px;
+}
+#container>div:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#container>div>img{
+    width: 100%;
+}
+#container>div>button{
+    padding: 5px 14px;
+    background-color: #e3e1e2;
+    border: 0px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+#container>div>button:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+
+/* Bottom CSS here */
+#bottom{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+#bottom>div{
+    width: 23%;
+    padding: 10px 0px 10px 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#bottom>.signup~div>h4:hover{
+    color: rgb(69, 71, 241);
+}
+#bottom>.signup .Sign{
+   padding: 5px;
+   margin-left: 10px;
+   font-size: small;
+   background-color:gray;
+   border: 0px;
+}
+#bottom>.signup .Sign:hover{
+    background-color: rgb(28, 28, 29);
+    color: rgb(131, 129, 238);
+    transition: 1s;
+}
