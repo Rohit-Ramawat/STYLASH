@@ -14,3 +14,11 @@ let cartIcon=document.querySelector("#cart");
 cartIcon.addEventListener("click",()=>{
     location.href="cart.html";
  });
+let video=document.getElementById("top");
+video.addEventListener("click",()=>{
+   location.href="bag.html";
+});
+let scarves=document.querySelector('.scarves');
+scarves.addEventListener("click",()=>{
+   location.href="scarves.html";
+})

@@ -193,14 +193,16 @@ nav>.icons>div>i:hover{
     color: rgb(69, 71, 241);
 }
 #bottom>.signup .Sign{
-   padding: 5px;
-   margin-left: 10px;
-   font-size: small;
-   background-color:gray;
-   border: 0px;
+    padding: 5px 14px;
+    background-color: #e3e1e2;
+    border: 0px;
+    border-radius: 3px;
+    font-weight: bold;
+    
 }
 #bottom>.signup .Sign:hover{
-    background-color: rgb(28, 28, 29);
-    color: rgb(131, 129, 238);
-    transition: 1s;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: 0.5s;
 }

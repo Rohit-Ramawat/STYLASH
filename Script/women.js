@@ -14,3 +14,4 @@ let cartIcon=document.querySelector("#cart");
 cartIcon.addEventListener("click",()=>{
     location.href="cart.html";
  });
+ 
