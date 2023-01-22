@@ -15,51 +15,52 @@
             <div class="menu">
                 <a class="menu_links" href="#">GIFTS <i class="fa fa-caret-down"></i></a>
                 <div class="submenu">
-                    <a href="#">WOMEN'S</a>
-                    <a href="#">MEN'S</a>
-                    <a href="#">CHILDREN'S</a>
+                    <a href="./women.html">WOMEN'S</a>
+                    <a href="./men.html">MEN'S</a>
+                    <a href="./children.html">CHILDREN'S</a>
                 </div>
             </div>
             <div class="menu">
                 <a class="menu_links" href="#">NEW IN <i class="fa fa-caret-down"></i></a>
                 <div class="submenu">
-                    <a href="#">WOMEN'S</a>
-                    <a href="#">MEN'S</a>
-                    <a href="#">CHILDREN'S</a>
+                    <a href="./women.html">WOMEN'S</a>
+                    <a href="./men.html">MEN'S</a>
+                    <a href="./children.html">CHILDREN'S</a>
                 </div>
             </div>
-            <div class="menu"><a class="menu_links" href="#">WOMEN</a></div>
-            <div class="menu"><a class="menu_links" href="#">MEN</a></div>
-            <div class="menu"><a class="menu_links" href="#">CHILDREN</a></div>
+            <div class="menu"><a class="menu_links" href="./women.html">WOMEN</a></div>
+            <div class="menu"><a class="menu_links" href="./men.html">MEN</a></div>
+            <div class="menu"><a class="menu_links" href="./children.html">CHILDREN</a></div>
             <div class="menu">
                 <a class="menu_links" href="#">OUTERWEAR <i class="fa fa-caret-down"></i></a>
                 <div class="submenu">
-                    <a href="#">WOMEN'S</a>
-                    <a href="#">MEN'S</a>
-                    <a href="#">CHILDREN'S</a>
+                    <a href="./women.html">WOMEN'S</a>
+                    <a href="./men.html">MEN'S</a>
+                    <a href="./children.html">CHILDREN'S</a>
                 </div>
             </div>
-            <div class="menu"><a class="menu_links" href="#">BAGS</a></div>
+            <div class="menu"><a class="menu_links" href="./bag.html">BAGS</a></div>
             <div class="menu"><a class="menu_links" href="#">BEYOND</a></div>
         </div>
         <div class="icons">
-            <div><i class="fa-solid fa-magnifying-glass"></i></div>
-            <div><i class="fa-solid fa-user-large"></i></div>
-            <div><i class="fa-solid fa-bag-shopping"></i></div>
+            <!-- <div><i class="fa-solid fa-magnifying-glass"></i></div> -->
+            <div><i id="account" class="fa-solid fa-user-large"></i></div>
+            <div><i id="cart" class="fa-solid fa-bag-shopping"></i></div>
         </div>
     </nav>
     <div class="image">
         <h1>SIGN IN/REGISTER</h1>
     </div>
+    <!-- Registration and Signin Divs -->
     <div id="cont">
         <div id="signin">
            <h3>SIGN IN</h3>
            <p>Please enter your email and password below to access your account</p>
-           <form>
+           <form id="signin_form">
                <p>Email</p>
-               <input type="email">
+               <input type="email" id="email">
                <p>Password</p>
-               <input type="password">
+               <input type="password" id="password">
                <p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
                <input type="submit" value="Sign in" id="signinBtn">
            </form>
@@ -67,7 +68,7 @@
         <div id="register">
            <h3>REGISTER</h3>
            <p>Please register below to create an account</p>
-           <form>
+           <form id="register_form">
             <p>Location</p>
             <select name="" id="country">
               <option value="usa">U.S.A.</option>
@@ -93,15 +94,15 @@
               <option value="Mrs">Mrs</option>
             </select>
             <p>First Name</p>
-            <input type="text">
+            <input type="text" id="firstname">
             <p>Last Name</p>
-            <input type="text">
+            <input type="text" id="lastname">
             <p>Phone</p>
-            <input type="number">
+            <input type="number" id="phone">
             <p>Email</p>
-            <input type="email">
+            <input type="email" id="emailid">
             <p>Password</p>
-            <input type="password">
+            <input type="password" id="passwordid">
             <p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
             <input type="submit" value="Register" id="registerBtn">
            </form>
@@ -129,4 +130,5 @@
     </div>
     <hr>
 </body>
+<script src="./Script/register.js"></script>
 </html>
